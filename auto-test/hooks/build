@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+echo "Pulling averapaco/ci..."
+docker pull averapaco/ci > /dev/null
+echo "done!"
+docker-compose build web
